@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 setTimeout(() => {
                     flashEffect.classList.remove("flash"); // Remove flash after effect
-                    princessImg.src = "images/my-big-image.png"; // Change to evolved image
+                    princessImg.src = "my-big-image.png"; // Change to evolved image
                     princessImg.classList.add("evolved"); // Apply smaller size
                 }, 500); // Flash duration
 

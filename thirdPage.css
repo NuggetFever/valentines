@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4d4d;
+}
+
+.container {
+    position: relative;
+}
+
+#princess-img {
+    margin-top: 30px;
+    width: 200px;
+    /* Initial size */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    /* Ensure the image is positioned relative */
+}
+
+/* Heart Animation Containers */
+#heart-animation-left,
+#heart-animation-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    /* Increased size */
+    height: 150px;
+    /* Increased size */
+    display: none;
+    /* Initially hidden */
+}
+
+#heart-animation-left {
+    left: -80px;
+    /* Closer to the image */
+}
+
+#heart-animation-right {
+    right: -80px;
+    /* Closer to the image */
+}
+
+
+/* Flash Effect */
+#flash-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+    /* Longer duration for visibility */
+}
+
+.flash {
+    opacity: 0.8;
+    /* More visible */
+    visibility: visible;
+}
+
+/* Second Image (Evolved Image) */
+#princess-img.evolved {
+    margin-bottom: 80px;
+    width: 50px;
+    /* Smaller size */
+    transform: scale(1);
+    /* Reset scale */
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+    display: none;
+    /* Hidden initially */
+}
+
+.hidden {
+    display: none;
+}
